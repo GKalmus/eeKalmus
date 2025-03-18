@@ -1,0 +1,25 @@
+// Estonian keyboard layout, by Gert Kalmus
+
+// This layout makes adjustment to Ville Hallik's "nodeadkeys" Estonian keyboard.
+// The main focus of this keyboard is programming comfortably in qwerty Estonian.
+// By placing common programming, this can be achived 
+
+partial alphanumeric_keys
+xkb_symbols "eekalmus" {
+
+    include "ee(nodeadkeys)"
+
+    name[Group1] = "Estonian (GKalmus)";
+
+    key <AD02>  { [         w,          W,            scaron,         Scaron ] }; // Alt-gr W š
+
+    key <AC01>	{ [         a,          A,	   braceleft,	   braceleft ] }; // Alt-gr A {
+    key <AC02>	{ [         s,          S,	  braceright,	 braceright  ] }; // Alt-gr S }
+    key <AC03>	{ [         d,          D,	 bracketleft,	bracketleft  ] }; // Alt-gr D [
+    key <AC04>	{ [         f,          F,	bracketright,  	bracketright ] }; // Alt-gr F ]
+    key <AC07>	{ [         j,          J,		 bar,		 bar ] }; // Alt-gr j |
+    key <AC08>	{ [         k,          K,		less,    	less ] }; // Alt-gr k <
+    key <AC09>	{ [         l,          L,	     greater,        greater ] }; // Alt-gr l >
+
+};
+

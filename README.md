@@ -15,8 +15,8 @@ To use the alternative symbols file eeKalmus eeKalmus, follow these steps:
 
 1. Clone the repository:
 ```sh
-    $ git clone https://github.com/GKalmus/eeKalmus.git
-    $ cd eeKalmus
+$ git clone https://github.com/GKalmus/eeKalmus.git
+$ cd eeKalmus
 ```
 
 2. Copy the alternative symbols file into xkb's symbols directory:

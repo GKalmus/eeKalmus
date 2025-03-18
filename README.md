@@ -15,25 +15,25 @@ To use the alternative symbols file eeKalmus eeKalmus, follow these steps:
 
 1. Clone the repository:
 ```sh
-$ git clone https://github.com/GKalmus/eeKalmus.git
-$ cd eeKalmus
+git clone https://github.com/GKalmus/eeKalmus.git
+cd eeKalmus
 ```
 
 2. Copy the alternative symbols file into xkb's symbols directory:
 ```sh
-    $ sudo cp eeKalmus /usr/share/X11/xkb/symbols/
+sudo cp eeKalmus /usr/share/X11/xkb/symbols/
 ```
 
 3. Set the eeKalmus symbols file into permanent keyboard layout:
 ```sh
-    $ sudo localectl --no-convert set-x11-keymap eeKalmus pc104 ,qwerty lv3:ralt_switch
+sudo localectl --no-convert set-x11-keymap eeKalmus pc104 ,qwerty lv3:ralt_switch
 ```
 
 ## Usage
 
 You can set the layout temporarily using the setxkbmap command. For example:
 ```sh
-    $ setxkbmap eeKalmus 
+setxkbmap eeKalmus 
 ```
 
 ## Customization
@@ -46,13 +46,13 @@ XKB documentation (https://www.x.org/wiki/XKB/) for more details on how to modif
 
 To add a custom key mapping, you can edit the symbols file as follows:
 ```cpp
-    xkb_symbols "typeName" {
-        include "filename(typeName)" 
-        // These will replace the keys of "filename(typeName)". For example, "ee(nodeadkeys)"
-        key <keycode> { [ key, Shift+key, alt-gr+key, Alt-gr+Shift+key ] };
-        // For example, key <AC01>	{ [ a, A, braceleft, braceleft ] }; 
-        // Add more custom mappings here
-    };
+xkb_symbols "typeName" {
+    include "filename(typeName)" 
+    // These will replace the keys of "filename(typeName)". For example, "ee(nodeadkeys)"
+    key <keycode> { [ key, Shift+key, alt-gr+key, Alt-gr+Shift+key ] };
+    // For example, key <AC01>	{ [ a, A, braceleft, braceleft ] }; 
+    // Add more custom mappings here
+};
 ```
 
 ## Contributing

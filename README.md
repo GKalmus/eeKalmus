@@ -1,4 +1,4 @@
-# Alternative XKB Symbols File
+# Alternative Estonian keyboard configuration by GKalmus 
 
 This repository contains an alternative xkb symbols file eeKalmus for customizing keyboard layouts 
 on Linux systems using the X Keyboard Extension (XKB). 
@@ -14,26 +14,26 @@ your keyboard layout beyond the default options provided by your distribution.
 To use the alternative symbols file eeKalmus eeKalmus, follow these steps:
 
 1. Clone the repository:
-```
-    git clone  https://github.com/GKalmus/eeKalmus.git
-    cd eeKalmus
+```sh
+    $ git clone https://github.com/GKalmus/eeKalmus.git
+    $ cd eeKalmus
 ```
 
 2. Copy the alternative symbols file into xkb's symbols directory:
-```
-    sudo cp eeKalmus /usr/share/X11/xkb/symbols/
+```sh
+    $ sudo cp eeKalmus /usr/share/X11/xkb/symbols/
 ```
 
 3. Set the eeKalmus symbols file into permanent keyboard layout:
-```
-    sudo localectl --no-convert set-x11-keymap eeKalmus pc104 ,qwerty lv3:ralt_switch
+```sh
+    $ sudo localectl --no-convert set-x11-keymap eeKalmus pc104 ,qwerty lv3:ralt_switch
 ```
 
 ## Usage
 
 You can set the layout temporarily using the setxkbmap command. For example:
-```
-    setxkbmap -layout eeKalmus 
+```sh
+    $ setxkbmap eeKalmus 
 ```
 
 ## Customization
@@ -45,7 +45,7 @@ XKB documentation (https://www.x.org/wiki/XKB/) for more details on how to modif
 ### Example Customization
 
 To add a custom key mapping, you can edit the symbols file as follows:
-```
+```cpp
     xkb_symbols "typeName" {
         include "filename(typeName)" 
         // These will replace the keys of "filename(typeName)". For example, "ee(nodeadkeys)"

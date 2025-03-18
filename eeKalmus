@@ -22,4 +22,3 @@ xkb_symbols "eekalmus" {
     key <AC09>	{ [         l,          L,	     greater,        greater ] }; // Alt-gr l >
 
 };
-

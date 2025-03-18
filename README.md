@@ -47,7 +47,6 @@ Alt-gr + f = ]
 Alt-gr + j = |
 Alt-gr + k = <
 Alt-gr + l = >
-
 ```
 
 ## Customization

@@ -36,6 +36,20 @@ You can set the layout temporarily using the setxkbmap command. For example:
 setxkbmap eeKalmus 
 ```
 
+These are the remappings, all also apply when Shift-key is pressed with the combination:
+```
+Alt-gr + w = š
+
+Alt-gr + a = {
+Alt-gr + s = }
+Alt-gr + d = [
+Alt-gr + f = ]
+Alt-gr + j = |
+Alt-gr + k = <
+Alt-gr + l = >
+
+```
+
 ## Customization
 
 If you want to further customize the symbols file, you can edit the symbols/eeKalmus file. 
@@ -62,4 +76,4 @@ please open an issue or submit a pull request.
 
 ## License
 
-This project is licensed under the GPL-3.0 License. See the LICENSE file for more details.
+This project is licensed under the GPL-3.0 License. See the [LICENSE](!LICENSE) file for more details.

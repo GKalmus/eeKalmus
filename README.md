@@ -28,7 +28,7 @@ sudo cp eeKalmus /usr/share/X11/xkb/symbols/
 ```sh
 sudo localectl --no-convert set-x11-keymap eeKalmus pc104 ,qwerty lv3:ralt_switch
 ```
-3.b For hyprland setup, just set keyboard layout as eeKalmus. For example:
+>For hyprland setup, just set keyboard layout as eeKalmus. For example:
 ```
 input {
     kb_layout = eeKalmus

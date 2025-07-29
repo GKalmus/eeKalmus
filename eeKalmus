@@ -2,7 +2,7 @@
 
 // This layout makes adjustment to Ville Hallik's "nodeadkeys" Estonian keyboard.
 // The main focus of this keyboard is programming comfortably in qwerty Estonian.
-// By placing common programming, this can be achived 
+// By placing common programming symbols into homerow 
 
 partial alphanumeric_keys
 xkb_symbols "eekalmus" {
